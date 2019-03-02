@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import AuxComp from '../../hoc/AuxComp';
+import Posts from '../../components/Posts/Posts'; // img will need .img / .jpg
+
 
 class Newsfeed extends Component {
     state = {
@@ -12,7 +14,7 @@ class Newsfeed extends Component {
 
         return (
             <AuxComp>
-                <h1>Hello World!</h1>
+                <Posts />
             </AuxComp>
         );
     }
