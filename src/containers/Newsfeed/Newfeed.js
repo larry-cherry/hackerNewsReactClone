@@ -10,11 +10,14 @@ class Newsfeed extends Component {
 
 
     render() {
-        
+        let posts = null;
+        if (this.state.posts) {
+            posts = <Posts/>
+        }
 
         return (
             <AuxComp>
-                <Posts />
+                {posts}
             </AuxComp>
         );
     }
